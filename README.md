@@ -1,6 +1,6 @@
 # UIImageGenerator
 
-Generates a single swift file with UIImage category containing all the imagese from .xcassetts files.
+UIImageGenerator is a Swift script generating a single Swift file with UIImage category containing all the imagese from .xcassetts files.
 
 ### Example
 
@@ -61,9 +61,9 @@ Generates a single swift file with UIImage category containing all the imagese f
 
 ### How to use it
 
-1. Copy the ```UIImageGenerator.swift``` file to ```/usr/local/bin/``` of your computer
+- Copy the ```UIImageGenerator.swift``` file to ```/usr/local/bin/``` of your computer
 
-2. Add following lines to **Run Script** phase of you Xcode project target settings.
+- Add following lines to the **Run Script** phase of you Xcode project target settings.
 
 ```
 	if [ "${CONFIGURATION}" != "Release" ]; then
@@ -75,10 +75,12 @@ Generates a single swift file with UIImage category containing all the imagese f
     fi
 ```
 
-3. Add the ```ProjectImages.swift``` file to your project.
+- Add the ```ProjectImages.swift``` file to your project.
 
-4. You can then use all your images this way :
-``` let image = UIImage.OnboardingImages.step2Hand ```
+- You can then use all your images this way:
+
+
+	``` let image = UIImage.OnboardingImages.step2Hand ```
 
 
 
@@ -86,3 +88,5 @@ Generates a single swift file with UIImage category containing all the imagese f
 ### See also
 
 [Natalie - Storyboard Code Generator (for Swift)](https://github.com/krzyzanowskim/Natalie)
+
+[Swift Scripting talk by Ayaka Nonaka](https://realm.io/news/swift-scripting/)
